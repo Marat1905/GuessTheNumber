@@ -1,0 +1,7 @@
+{
+  "MaxRetryCount": 10,
+  "Range": {
+    "Start": 1,
+    "End": 30
+  }
+}
