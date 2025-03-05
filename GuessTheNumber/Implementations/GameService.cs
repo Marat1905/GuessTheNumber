@@ -23,10 +23,10 @@ namespace GuessTheNumber.Implementations
         {
             var number = _generator.Generate();
 
-            while (true)
-            {
+            //while (true)
+            //{
 
-            }
+            //}
         }
     }
 }

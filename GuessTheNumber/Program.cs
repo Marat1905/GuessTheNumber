@@ -1,11 +1,7 @@
 ﻿using GuessTheNumber.Extensions;
-using GuessTheNumber.Implementations;
 using GuessTheNumber.Interfaces;
-using GuessTheNumber.Models;
-using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using GuessTheNumber.Extensions;
 
 namespace GuessTheNumber
 {
