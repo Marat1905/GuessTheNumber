@@ -24,7 +24,7 @@ namespace GuessTheNumber.Implementations
         {
             var number = _generator.Generate();
 
-            _notify.Information($"Угадайте число от {_settings.Range.Start} до {_settings.Range.End}");
+            _notify.Information($"Угадайте число от {_settings.Range.Start} до {_settings.Range.End}!!!!");
 
             //while (true)
             //{

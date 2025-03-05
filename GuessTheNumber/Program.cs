@@ -13,7 +13,6 @@ namespace GuessTheNumber
             var myGame = host.Services.GetRequiredService<IGameService>();
             myGame.StartGame();
 
-            Console.WriteLine("Hello, World!");
         }
 
        
