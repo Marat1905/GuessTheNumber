@@ -1,5 +1,6 @@
 ﻿using GuessTheNumber.Interfaces;
 using GuessTheNumber.Models;
+using System.Reflection;
 
 namespace GuessTheNumber.Implementations
 {
@@ -22,6 +23,8 @@ namespace GuessTheNumber.Implementations
         public void StartGame()
         {
             var number = _generator.Generate();
+
+            _notify.Information($"Угадайте число от {_settings.Range.Start} до {_settings.Range.End}");
 
             //while (true)
             //{
