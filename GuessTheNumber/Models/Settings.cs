@@ -1,14 +1,12 @@
-﻿using GuessTheNumber.Models;
-
-namespace GuessTheNumber.Interfaces
+﻿namespace GuessTheNumber.Models
 {
     /// <summary>Настройки игры </summary>
-    public interface ISettings
+    public class Settings
     {
         /// <summary>Максимальное количество попыток</summary>
-        int MaxRetryCount { get; set; }
+        public int MaxRetryCount { get; set; }
 
         /// <summary><inheritdoc cref="RangeNumbers"/></summary>
-        RangeNumbers Range { get; set; }
+        public RangeNumbers Range { get; set; }
     }
 }
