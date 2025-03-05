@@ -5,6 +5,7 @@ using GuessTheNumber.Models;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using GuessTheNumber.Extensions;
 
 namespace GuessTheNumber
 {
@@ -14,6 +15,7 @@ namespace GuessTheNumber
         {
             var host = CreateHostBuilder(args).Build();
             var myGame = host.Services.GetRequiredService<IGameService>();
+            myGame.StartGame();
 
             Console.WriteLine("Hello, World!");
         }
@@ -23,9 +25,7 @@ namespace GuessTheNumber
         Host.CreateDefaultBuilder(args)
             .ConfigureServices((hostContext, services) =>
             {
-                var settings = SettingsConfigurationManager.Configuration.Get<Settings>();
-                services.AddSingleton<Settings>(settings);
-                services.AddTransient<IGameService,GameService>();
+                services.AddServices();
             });
     }
 }
