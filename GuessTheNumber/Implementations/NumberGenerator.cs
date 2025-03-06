@@ -17,9 +17,6 @@ namespace GuessTheNumber.Implementations
             _settings = settings;
         }
 
-        public virtual int Generate()
-        {
-            return _random.Next(_settings.Range.Start, _settings.Range.End);
-        }
+        public virtual int Generate()=>_random.Next(_settings.Range.Start, _settings.Range.End);
     }
 }
